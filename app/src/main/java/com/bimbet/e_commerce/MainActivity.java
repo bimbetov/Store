@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 
 import com.bimbet.e_commerce.adapter.CategoryAdapter;
 import com.bimbet.e_commerce.adapter.CourseAdapter;
@@ -71,6 +72,12 @@ public class MainActivity extends AppCompatActivity {
 
         categoryAdapter = new CategoryAdapter(this, categoryList);
         categoryRecycler.setAdapter(categoryAdapter);
+    }
+
+    public void showAllCourse(View view){
+        courseList.clear();
+        courseList.addAll(fullCoursesList);
+        courseAdapter.notifyDataSetChanged();
     }
 
     public static void showCoursesByCategory(int category){

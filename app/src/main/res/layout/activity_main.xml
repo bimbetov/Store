@@ -104,6 +104,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="15dp"
+        android:onClick="showAllCourse"
+        android:clickable="true"
         android:contentDescription="@string/sales_icon"
         app:layout_constraintStart_toEndOf="@+id/constraintLayout"
         app:layout_constraintTop_toBottomOf="@+id/textView1"
